@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  block content
+  .container.mt-5
+    h1.text-primary Bienvenue sur mon site
+    p.lead Ceci est un site avec Bootstrap et Socket.IO
+    button.btn.btn-success#myButton Clique-moi
+    
+  p Bonjour #{name} !
+
+  if items.length
+    ul
+      each item in items
+        li= item
+  else
+    p Aucun élément trouvé.

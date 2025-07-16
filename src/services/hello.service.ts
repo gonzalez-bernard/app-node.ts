@@ -1,3 +1,3 @@
 export function getHelloMessage(): string {
-  return 'Hello from service!'
+  return 'Hello from service...!'
 }

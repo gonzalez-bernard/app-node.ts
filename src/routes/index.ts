@@ -1,7 +1,8 @@
 import { Router } from 'express'
-import { helloController } from '../controllers/hello.controller'
+//import { helloController } from '../controllers/hello.controller'
+import { renderIndexPage } from '../controllers/index.controller'
 
 const router = Router()
-router.get('/hello', helloController)
+router.get('/', renderIndexPage)
 
 export default router

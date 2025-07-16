@@ -1,0 +1,22 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    // ✅ Bootstrap CSS local
+    link(rel="stylesheet", href="/vendor/bootstrap/bootstrap.min.css")
+
+  body
+    block content
+
+    // ✅ Bootstrap JS local
+    script(src="/vendor/bootstrap/bootstrap.bundle.min.js")
+
+    // ✅ Socket.IO client
+    script(src="/socket.io/socket.io.js")
+
+    // ✅ Ton script principal
+    script(src="/scripts/main.js")
+
